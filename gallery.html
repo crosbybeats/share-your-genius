@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+body{
+          background-color: rgb(221, 221, 221); 
+        }
+
+        /* set the initial position of the images */
+.image-container img {
+  position: bottom;
+  top: 100%;
+  opacity: 0;
+}
+
+/* animate the images as they float in */
+.image-container img {
+  animation: slide-in 1s ease forwards;
+}
+
+/* define the animation */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* set the container width and center it */
+.image-container {
+  max-width: 800px; /* adjust to your desired width */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* set the image width and add border */
+.image-container img {
+  width: 300px;
+  height: 300px;
+  margin: 8px; /* adjust to your desired border size */
+  padding: 5px;
+  border: 1px solid #c4c4c4; /* white border */
+  box-sizing: border-box;
+}
+
+    </style>
+</head>
+<body>
+    <body>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resource.html">Resources</a></li>
+    <li class="active"><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="image-container">
+            <img src="image/cherry 7.jpg">
+            <img src="image/CherryFerrari_NateWatters-7668.jpg">
+            <img src="image/CherryFerrari_NateWatters-9518.jpg">
+            <img src="image/CherryFerrari_NateWatters-9524.jpg">
+            <img src="image/CherryFerrari_NateWatters-9545.jpg">
+            <img src="image/CherryFerrari_NateWatters-9587.jpg">
+            <img src="image/silva flick 1.jpg">
+            <img src="image/zaee jamerz-4.jpg">
+            <img src="image/DSC_7823.jpg">
+            <img src="image/IMG_6481.jpg">
+            <img src="image/IMG_6492.jpg">
+            <img src="image/IMG_6484.jpg">
+          </div>
+          
+       
+          
+          
+</body>
+</html>
