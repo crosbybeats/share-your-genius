@@ -10,16 +10,91 @@
 body{
           background-color: rgb(221, 221, 221); 
         }
-    </style>
-    
+
+
+        body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-image: url("image/CherryFerrari_NateWatters-9545.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+        .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-item {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+  color: #dadada; 
+}
+
+.contact-item[data-contact]::before {
+  content: attr(data-contact);
+  display: none;
+}
+
+.contact-item:hover::before {
+  display: block;
+  font-size: 0.6em;
+  margin-top: 0.5em;
+  color: #000;
+}
+
+.contact-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+	</style>
+</head>
+<body>
 </head>
 <body>
     <body>
-        <ul class="nav">
+    
+        <ul class="nav" style="text-align: center">
             <li><a href="index.html">Home</a></li>
             <li><a href="resource.html">Resources</a></li>
     <li><a href="gallery.html">Gallery</a></li>
     <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
+       <br>
+       <div class="contact-container">
+        <ul class="contact-list">
+          <li class="contact-item" data-contact="425-383-7549">Phone Number</li>
+              <li class="contact-item" data-contact="@oliver_crosby">Instagram</li>
+        </ul>
+      </div>
+
+      <h2 style="text-align:center;">
+        Email:
+        <a href="mailto:yo@eastsideprep.org?Subject=Hello%20" target="_top">
+        Send Mail</a>
+      </h2>
+      
+      
+      
 </body>
 </html>

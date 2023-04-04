@@ -11,19 +11,19 @@ body{
           background-color: rgb(221, 221, 221); 
         }
 
-        /* set the initial position of the images */
+     
 .image-container img {
   position: bottom;
   top: 100%;
   opacity: 0;
+  object-fit: cover
 }
 
-/* animate the images as they float in */
 .image-container img {
   animation: slide-in 1s ease forwards;
 }
 
-/* define the animation */
+
 @keyframes slide-in {
   0% {
     opacity: 0;
@@ -35,23 +35,25 @@ body{
   }
 }
 
-/* set the container width and center it */
+
 .image-container {
-  max-width: 800px; /* adjust to your desired width */
+  max-width: 800px; 
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  object-fit: cover
 }
 
-/* set the image width and add border */
+
 .image-container img {
   width: 300px;
   height: 300px;
-  margin: 8px; /* adjust to your desired border size */
+  margin: 8px; 
   padding: 5px;
-  border: 1px solid #c4c4c4; /* white border */
+  border: 1px solid #c4c4c4; 
   box-sizing: border-box;
+  object-fit: cover
 }
 
     </style>
@@ -64,6 +66,13 @@ body{
     <li class="active"><a href="gallery.html">Gallery</a></li>
     <li><a href="contact.html">Contact</a></li>
         </ul>
+        <br>
+        <br>
+        <div style="width: 60%; margin: 0 auto; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: large;">
+          Here is a series of photos from a recent perfromance that I did, at the Museum of Pop Culture in Seattle. I played with 3 different bands for this event, with one being Cherry Ferrari, and we got to perform with a giant color screen in front of 400+ people. There are also some images here from our very own green screen room!
+        </div>
+        <br>
+        <br>
         <div class="image-container">
             <img src="image/cherry 7.jpg">
             <img src="image/CherryFerrari_NateWatters-7668.jpg">

@@ -10,6 +10,20 @@ body{
     overflow: hidden;
 }
 
+.nav{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    
+}
+
+.nav{
+    margin: 0 auto;
+    text-align: center;
+}
+
 ul.nav li{
     float: left;
     }
@@ -27,7 +41,7 @@ ul.nav li{
         color: wheat;
     }
 .active{
-    background-color: rgb(139, 99, 47);
+    background-color: rgb(255, 255, 255);
 }
 h1 {
     margin: auto;
